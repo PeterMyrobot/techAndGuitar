@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/techAndGuitar',
+  images: { domains: ['/techAndGuitar'] },
+  env: { PUBLIC_URL: 'https://petermyrobot.github.io/techAndGuitar' },
   output: 'export',
 };
 
