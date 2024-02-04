@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 
 const repo = 'techAndGuitar';
-const assetPrefix = `./${repo}/`;
-const basePath = `./${repo}`;
+const pageLink = 'https://petermyrobot.github.io/';
+const assetPrefix = `${pageLink}/${repo}/`;
+const basePath = `/${pageLink}/${repo}`;
 const nextConfig = {
   assetPrefix: assetPrefix,
   basePath: basePath,
