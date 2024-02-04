@@ -6,7 +6,7 @@ const assetPrefix = `${pageLink}/${repo}/`;
 const basePath = `/${pageLink}/${repo}`;
 const nextConfig = {
   assetPrefix: 'https://petermyrobot.github.io/techAndGuitar',
-  // basePath: '/techAndGuitar',
+  basePath: 'https://petermyrobot.github.io/techAndGuitar',
   output: 'export',
 };
 
