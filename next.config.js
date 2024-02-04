@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+
+const repo = 'techAndGuitar';
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
 const nextConfig = {
-  images: { domains: ['/techAndGuitar'] },
-  env: { PUBLIC_URL: 'https://techAndGuitar.com/techAndGuitar' },
-  basePath: '/techAndGuitar',
+  assetPrefix: assetPrefix,
+  basePath: basePath,
   output: 'export',
 };
 
