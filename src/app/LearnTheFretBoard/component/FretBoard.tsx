@@ -25,7 +25,7 @@ const getNote = (stringIdx: number, fretIdx: number) => {
 
 const getFretPositionIndex = (stringIdx: number, fretIdx: number) => `${stringIdx}-${fretIdx}`;
 
-const NoteOnFretboard = ({ note }) => {
+const NoteOnFretboard = ({ note }: { note: TNote }) => {
   const { string, fret, color = 'bg-cyan-400', showingNote } = note;
   const noteMark = getNote(string, fret);
   console.log(string, fret, color, showingNote, noteMark);
