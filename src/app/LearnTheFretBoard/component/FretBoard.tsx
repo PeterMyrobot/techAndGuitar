@@ -8,6 +8,7 @@ export type TNote = {
   string: number;
   fret: number;
   color: string;
+  noteLabel?: string;
   showingNote: boolean;
 };
 
@@ -38,8 +39,8 @@ function FretBoard({
   }, {} as Record<string, any>);
 
   const NoteOnFretBoard = ({ note }: { note: TNote }) => {
-    const { string, fret, color = 'bg-cyan-400', showingNote } = note;
-    const noteMark = getNote(string, fret, stringTuning);
+    const { string, fret, color = 'bg-cyan-400', showingNote, noteLabel = '' } = note;
+    const noteMark = noteLabel || getNote(string, fret, stringTuning);
 
     return (
       <div
